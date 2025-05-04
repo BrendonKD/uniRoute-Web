@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'connection.php';
+include 'db.php';
 
 // Add new route
 if (isset($_POST['add'])) {

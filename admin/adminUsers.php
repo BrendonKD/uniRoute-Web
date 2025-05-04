@@ -108,7 +108,7 @@ $result = $conn->query($sql);
         <h2 class="page-title">Manage Users</h2>
         <div class="d-flex justify-content-end mb-3">
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
-            + Add New User
+            + Add New Admin
         </button>
     </div>
 

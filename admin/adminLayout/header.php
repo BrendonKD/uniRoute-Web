@@ -105,7 +105,6 @@
     <nav id="nav-menu">
         <a href="../admin/dashboard.php">home</a>
         <a href="../admin/admin.php">Shuttles</a>
-        <a href="#">Messages</a>
         <a href="../admin/adminUsers.php">Users</a>
         <a href="../admin/bookings.php">Bookings</a>
         <a href="../admin/routes.php">Routes</a>
