@@ -90,7 +90,7 @@ foreach ($bookings as $booking) {
 <body>
 <?php include '../admin/adminLayout/header.php'; ?>
 
-<div class="container" style="margin-top: 75px">
+<div class="container" style="margin-top: 85px">
     <h2 class="page-title">Seats Reserved</h2>
 
     <div class="filter-card">
