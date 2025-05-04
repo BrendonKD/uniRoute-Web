@@ -223,7 +223,7 @@ if ($bus_driver_email) {
 // Send email to customer
 $customer_notification_sent = sendEmail($email, $customer_subject, $customer_body, $mail_config);
 
-// Store email status messages to display on page
+// Store email status messages to display
 $email_status = "";
 if ($customer_notification_sent) {
     $email_status .= "<p style='color: green;'>✅ Confirmation email sent to your email address.</p>";
