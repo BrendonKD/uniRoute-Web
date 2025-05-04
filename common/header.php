@@ -77,7 +77,7 @@
 
 <header class="header">
     <div class="logo">UniRoute</div>
-    <nav>
+    <nav id="nav-menu">
         <a href="../home/home.php">Home</a>
         <a href="../Contact_us/contact.php">Contact Us</a>
         <a href="../feedback/feedback.php">Feedback</a>
@@ -88,5 +88,11 @@
     <div class="user-info">
         <span>Welcome, <strong><?php echo htmlspecialchars($userName); ?></strong></span>
     </div>
-    <button class="hamburger">☰</button>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
 </header>
+
+<script>
+function toggleMenu() {
+    document.getElementById('nav-menu').classList.toggle('active');
+}
+</script>
