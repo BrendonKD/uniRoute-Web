@@ -1,5 +1,5 @@
 <?php
-include 'connection.php';
+include 'db.php';
 
 // Safely get POST values
 $bus_id = $_POST['bus_id'] ?? '';

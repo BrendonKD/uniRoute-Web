@@ -21,12 +21,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssis", $name, $email, $contact, $rating, $comments);
 
     if ($stmt->execute()) {
-        echo "Feedback submitted successfully!";
+        echo "<script>alert('Feedback submitted successfully!');
+        window.location.href = '../feedback/feedback.php';
+        </script>";
     } else {
-        echo "Error: " . $stmt->error;
+        echo "<script>alert('Error: " . $stmt->error . "');</script>";
     }
 
     $stmt->close();
     $conn->close();
 }
+
+
 ?>
