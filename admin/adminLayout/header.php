@@ -107,8 +107,7 @@
         <a href="../admin/admin.php">Shuttles</a>
         <a href="#">Messages</a>
         <a href="../admin/adminUsers.php">Users</a>
-        <a href="#">Payments</a>
-        <a href="#">Bookings</a>
+        <a href="../admin/bookings.php">Bookings</a>
         <a href="../admin/routes.php">Routes</a>
         <a href="logout.php" class="logout-btn">Logout</a>
     </nav>
