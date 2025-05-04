@@ -93,17 +93,19 @@ $result = $conn->query($sql);
             object-fit: cover;
             border-radius: 50%;
         }
+        .page-title {
+            color: #0d6efd;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-
-                <!-- Navbar -->
-                <?php include '../admin/adminLayout/header.php'; ?>
-
-
-                    <!-- Main container -->
+    <!-- Navbar -->
+<?php include '../admin/adminLayout/header.php'; ?>
+    <!-- Main container -->
     <div class="container mt-5 pt-5">
-        <h2 class="text-center my-4">Manage Users</h2>
+        <h2 class="page-title">Manage Users</h2>
         <div class="d-flex justify-content-end mb-3">
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
             + Add New User
