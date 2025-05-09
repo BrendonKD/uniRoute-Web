@@ -9,6 +9,12 @@ if (isset($_POST['submit'])) {
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     $cpassword = mysqli_real_escape_string($conn, $_POST['cpassword']);
 
+    //pw validate
+    if (!preg_match('/^[a-zA-Z0-9]{3,}$/', $username)) {
+        echo "<script>alert('Username must be at least 3 characters and contain only letters and numbers!'); window.location.href='register.php';</script>";
+        exit();
+    }
+
     $sql = "SELECT * FROM user WHERE username = '$username' OR email = '$email'";
     $result = mysqli_query($conn, $sql);
     $userExists = mysqli_num_rows($result) > 0;
