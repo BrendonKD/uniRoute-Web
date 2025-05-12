@@ -9,9 +9,15 @@ if (isset($_POST['submit'])) {
     $password = mysqli_real_escape_string($conn, $_POST['password']);
     $cpassword = mysqli_real_escape_string($conn, $_POST['cpassword']);
 
-    //pw validate
+    //username validate
     if (!preg_match('/^[a-zA-Z0-9]{3,}$/', $username)) {
         echo "<script>alert('Username must be at least 3 characters and contain only letters and numbers!'); window.location.href='register.php';</script>";
+        exit();
+    }
+
+    //contact num validate
+    if (!preg_match('/^[0-9]{10}$/', $contactNum)) {
+        echo "<script>alert('Contact number must be 10 digits!'); window.location.href='register.php';</script>";
         exit();
     }
 
