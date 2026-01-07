@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
 
         .wrap {
             max-width: 400px;
-            width: 100%;
+            width: 10%;
             background: rgba(255, 255, 255, 0.95);
             padding: 40px;
             border-radius: 10px;
